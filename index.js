@@ -3,7 +3,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
   
     const firstName = document.getElementById('firstName').value;
     const lastName = document.getElementById('lastName').value;
-    const fullName = firstName + ' ' + lastName;
+    const fullName = `${firstName} ${lastName}`;    
     const gender = document.getElementById('gender').value;
     const city = document.getElementById('city').value;
     const state = document.getElementById('state').value;
