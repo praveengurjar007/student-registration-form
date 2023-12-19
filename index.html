@@ -5,99 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Registration Form</title>
-    <style>
-        form {
-            margin: auto;
-            width: min(600px, 80%);
-            padding: 20px;
-            border: 1px solid #141d1a;
-            border-radius: 10px;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: #b2bdb579;
-
-        }
-
-        h2 {
-            text-align: center;
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        input[type="text"],
-        textarea,
-        select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            box-sizing: border-box;
-            opacity: 0.5;
-        }
-
-        textarea {
-            height: 100px;
-            resize: vertical;
-        }
-
-        .checkboxes {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin: 20px 0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 10px;
-        }
-
-        .checkbox {
-            display: flex;
-            align-items: flex-start;
-            margin-right: 20px;
-        }
-
-        .checkboxes label {
-            margin-right: 20px;
-        }
-
-        .buttons {
-            display: flex;
-            justify-content: center;
-        }
-
-        .buttons button {
-            background-color: #854d28;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            width: 150px;
-            font-size: 16px;
-            cursor: pointer;
-            margin-right: 10px;
-        }
-
-        .buttons button:hover {
-            background-color: #6e4225;
-        }
-    </style>
-    <script>
-function validateForm() {
-  let x = document.forms["myForm"]["fname"].value;
-  if (x == "") {
-    alert("Name must be filled out");
-    return false;
-  }
-}
-    </script>
+<link rel="stylesheet" href="index.css"> 
 </head>
 
 <body>
@@ -175,7 +83,10 @@ function validateForm() {
             <button type="reset">Reset</button>
             <button type="submit">Submit</button>
         </div>
+        <p id="message"></p>
     </form>
+    
+    <script src="index.js"></script>
 </body>
 
 </html>
