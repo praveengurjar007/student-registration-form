@@ -1,4 +1,5 @@
-document.getElementById('registrationForm').addEventListener('submit', function () {
+document.getElementById('registrationForm').addEventListener('submit', function (e) {
+  e.preventDefault();
 
   const firstName = document.getElementById('firstName').value;
   const lastName = document.getElementById('lastName').value;
